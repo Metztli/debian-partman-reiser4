@@ -1,0 +1,37 @@
+Template: partman-reiser4/text/reiser4
+Type: text
+# :sl1:
+# File system name (untranslatable in many languages)
+_Description: reiser4
+
+Template: partman/filesystem_long/reiser4
+Type: text
+# File system name
+# :sl2:
+_Description: Reiser4 journaling file system
+
+Template: partman/filesystem_short/reiser4
+Type: text
+# Short file system name (untranslatable in many languages)
+# :sl1:
+_Description: reiser4
+
+Template: partman-reiser4/reiser4_root
+Type: boolean
+Default: false
+# :sl2:
+_Description: Use unrecommended Reiser4 root file system?
+ Your root file system is a Reiser4 file system. This can cause problems
+ with the boot loader used by default by this installer.
+ .
+ You should use a small /boot partition with another file system, such as ext3.
+
+Template: partman-reiser4/reiser4_boot
+Type: boolean
+Default: false
+# :sl2:
+_Description: Use unrecommended Reiser4 /boot file system?
+ You have mounted a Reiser4 file system as /boot. This is likely to cause
+ problems with the boot loader used by default by this installer.
+ .
+ You should use another file system, such as ext3, for the /boot partition.

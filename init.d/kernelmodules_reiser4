@@ -1,0 +1,20 @@
+#!/bin/sh
+
+mkdir -p /var/lib/partman
+
+cat /proc/modules |
+while read module_name x; do
+	if [ "$module_name" = reiser4 ]; then
+		>/var/lib/partman/reiser4
+		exit 0
+	fi
+done
+
+if modprobe reiser4 >/dev/null 2>/dev/null; then
+	>/var/lib/partman/reiser4
+	exit 0
+fi
+
+if grep -q reiser4 /proc/filesystems; then
+	>/var/lib/partman/reiser4
+fi

@@ -1,0 +1,15 @@
+Source: partman-reiser4
+Section: debian-installer
+Priority: standard
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Uploaders: Colin Watson <cjwatson@debian.org>, Christian Perrier <bubulle@debian.org>
+Build-Depends: debhelper (>= 9), dh-di, po-debconf (>= 0.5.0)
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=d-i/partman-reiser4.git
+Vcs-Git: git://anonscm.debian.org/d-i/partman-reiser4.git
+
+Package: partman-reiser4
+Package-Type: udeb
+Architecture: all
+Depends: ${misc:Depends}, mkreiser4-udeb, reiser4progs-udeb, reiser4-modules, partman-basicfilesystems (>= 59), partman-base (>= 124)
+Provides: partman-filesystem
+Description: Add support for reiser4 to partman

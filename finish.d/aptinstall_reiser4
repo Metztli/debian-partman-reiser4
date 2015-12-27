@@ -1,0 +1,28 @@
+#!/bin/sh
+
+. /lib/partman/lib/base.sh
+
+reiser4=no
+
+for dev in $DEVICES/*; do
+	[ -d "$dev" ] || continue
+	cd $dev
+	partitions=
+	open_dialog PARTITIONS
+	while { read_line num id size type fs path name; [ "$id" ]; }; do
+		[ "$fs" != free ] || continue
+		[ -f $id/method -a -f $id/acting_filesystem ] || continue
+		filesystem=$(cat $id/acting_filesystem)
+		case $filesystem in
+		    reiser4)
+			reiser4=yes
+			;;
+		esac
+	done
+	close_dialog
+done
+
+if [ "$reiser4" = yes ]; then
+	# Jose 12-20-2015: initramfs-tools and linux-base to prepare for custom reiser4-enabled kernel
+	apt-install reiser4progs initramfs-tools linux-base || true
+fi
