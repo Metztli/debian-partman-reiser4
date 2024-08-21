@@ -3,12 +3,7 @@
 #
 # DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
 #
-# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
-# The master files can be found under packages/po/
-#
-# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
-#
-# translation of gl.po to Galician
+# translation of gl.po to galician
 # Galician messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
@@ -16,14 +11,13 @@
 # Marce Villarino <mvillarino@users.sourceforge.net>, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@gmail.com>, 2009.
-# Jorge Barreiro <xurxo@findomundo.es>, 2010, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: gl\n"
-"Report-Msgid-Bugs-To: partman-jfs@packages.debian.org\n"
-"POT-Creation-Date: 2010-02-26 22:59+0000\n"
-"PO-Revision-Date: 2014-11-13 23:34+0100\n"
-"Last-Translator: Jorge Barreiro <xurxo@findomundo.es>\n"
+"Report-Msgid-Bugs-To: partman-reiser4@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-26 22:58+0000\n"
+"PO-Revision-Date: 2009-11-22 22:28+0100\n"
+"Last-Translator: Marce Villarino <mvillarino@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -33,77 +27,24 @@ msgstr ""
 
 #. Type: text
 #. Description
-#. :sl1:
+#. :sl2:
 #. File system name (untranslatable in many languages)
-#. Type: text
-#. Description
-#. Short file system name (untranslatable in many languages)
-#. :sl1:
-#: ../partman-jfs.templates:1001 ../partman-jfs.templates:3001
-msgid "jfs"
-msgstr "jfs"
+#: ../partman-reiser4.templates:1001
+msgid "Reiser4"
+msgstr "Reiser4"
 
 #. Type: text
 #. Description
+#. :sl2:
 #. File system name
-#. :sl2:
-#: ../partman-jfs.templates:2001
-msgid "JFS journaling file system"
-msgstr "sistema de ficheiros transaccional JFS"
+#: ../partman-reiser4.templates:2001
+msgid "Reiser4 journaling file system"
+msgstr "Sistema de ficheiros transaccional Reiser4"
 
-#. Type: boolean
+#. Type: text
 #. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid "Use unrecommended JFS root file system?"
-msgstr "Desexa empregar JFS no sistema de ficheiros raíz (non recomendado)?"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid ""
-"Your root file system is a JFS file system. This can cause problems with the "
-"boot loader used by default by this installer."
-msgstr ""
-"O sistema de ficheiros raíz é un sistema de ficheiros JFS. Isto pode causar "
-"problemas co cargador de arranque predeterminado deste instalador."
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid ""
-"You should use a small /boot partition with another file system, such as "
-"ext3."
-msgstr ""
-"Debería empregar unha pequena partición para /boot con outro sistema de "
-"ficheiros, como ext3."
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid "Use unrecommended JFS /boot file system?"
-msgstr "Desexa empregar JFS no sistema de ficheiros /boot (non recomendado)?"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid ""
-"You have mounted a JFS file system as /boot. This is likely to cause "
-"problems with the boot loader used by default by this installer."
-msgstr ""
-"Montou un sistema de ficheiros JFS como /boot . Isto pode causar problemas "
-"co cargador de arranque predeterminado deste instalador."
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid ""
-"You should use another file system, such as ext3, for the /boot partition."
-msgstr ""
-"Debería empregar outro sistema de ficheiros, como ext3, para a partición /"
-"boot."
+#. :sl1:
+#. Short file system name (untranslatable in many languages)
+#: ../partman-reiser4.templates:3001
+msgid "reiser4"
+msgstr "reiser4"

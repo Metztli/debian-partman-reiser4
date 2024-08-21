@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: partman-jfs@packages.debian.org\n"
-"POT-Creation-Date: 2010-02-26 22:59+0000\n"
+"Report-Msgid-Bugs-To: partman-reiser4@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-26 22:58+0000\n"
 "PO-Revision-Date: 2009-08-22 02:46+0100\n"
 "Last-Translator: Tegegne Tefera <tefera@mekuria.com>\n"
 "Language-Team: Amharic\n"
@@ -24,73 +24,24 @@ msgstr ""
 
 #. Type: text
 #. Description
-#. :sl1:
+#. :sl2:
 #. File system name (untranslatable in many languages)
-#. Type: text
-#. Description
-#. Short file system name (untranslatable in many languages)
-#. :sl1:
-#: ../partman-jfs.templates:1001 ../partman-jfs.templates:3001
-msgid "jfs"
-msgstr "jfs"
+#: ../partman-reiser4.templates:1001
+msgid "Reiser4"
+msgstr "Reiser4"
 
 #. Type: text
 #. Description
+#. :sl2:
 #. File system name
-#. :sl2:
-#: ../partman-jfs.templates:2001
-msgid "JFS journaling file system"
-msgstr "JFS journaling ፋይል ስርዓት"
+#: ../partman-reiser4.templates:2001
+msgid "Reiser4 journaling file system"
+msgstr "Reiser4 journaling ፋይል ስርዓት"
 
-#. Type: boolean
+#. Type: text
 #. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid "Use unrecommended JFS root file system?"
-msgstr "ያልተረጋገጠ የJFS ስር ፋይል ስርዓትን ልጠቀም?"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid ""
-"Your root file system is a JFS file system. This can cause problems with the "
-"boot loader used by default by this installer."
-msgstr ""
-"የመረጡት የስር ፋይል ስርዓት JFS የፋይል ስርዓት ነው፡፡ ይህ ተካይ በቀዳሚነት ለሚጠቀመው የማስነሻ ፕሮግራም ችግር "
-"ሊፈጥር ይችላል፡፡"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid ""
-"You should use a small /boot partition with another file system, such as "
-"ext3."
-msgstr "አንድ ትንሽ እንደ ext3 ያለ የፋይል ስርዓት ክፋይ ለ/boot ቢጠቀሙ ጥሩ ነው፡፡"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid "Use unrecommended JFS /boot file system?"
-msgstr "ያልተረጋገጠ የJFS  /boot ፋይል ስርዓትን ልጠቀም?"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid ""
-"You have mounted a JFS file system as /boot. This is likely to cause "
-"problems with the boot loader used by default by this installer."
-msgstr ""
-"የJFS ፋይል ስርዓት እንደ /boot እንዲጫን መርጠዋል፡፡ ይህ ምርጫ ይህ ተካይ በቀዳሚነት ከሚጠቀምበት የቡት ጫኚ ጋር "
-"ችግር ሊፈጥር ይችላል፡፡"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid ""
-"You should use another file system, such as ext3, for the /boot partition."
-msgstr "ለ/boot ክፋይ እንደ ext3 ያለ የፋይል ስርዓት ቢጠቀሙ ይመረጣል፡፡"
+#. :sl1:
+#. Short file system name (untranslatable in many languages)
+#: ../partman-reiser4.templates:3001
+msgid "reiser4"
+msgstr "Reiser4"

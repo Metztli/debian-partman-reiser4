@@ -16,8 +16,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
-"Report-Msgid-Bugs-To: partman-jfs@packages.debian.org\n"
-"POT-Creation-Date: 2010-02-26 22:59+0000\n"
+"Report-Msgid-Bugs-To: partman-reiser4@packages.debian.org\n"
+"POT-Creation-Date: 2010-02-26 22:58+0000\n"
 "PO-Revision-Date: 2011-09-15 07:01+0530\n"
 "Last-Translator: \n"
 "Language-Team: Sinhala <info@hanthana.org>\n"
@@ -29,73 +29,24 @@ msgstr ""
 
 #. Type: text
 #. Description
-#. :sl1:
+#. :sl2:
 #. File system name (untranslatable in many languages)
-#. Type: text
-#. Description
-#. Short file system name (untranslatable in many languages)
-#. :sl1:
-#: ../partman-jfs.templates:1001 ../partman-jfs.templates:3001
-msgid "jfs"
-msgstr "jfs"
+#: ../partman-reiser4.templates:1001
+msgid "Reiser4"
+msgstr "Reiser4"
 
 #. Type: text
 #. Description
+#. :sl2:
 #. File system name
-#. :sl2:
-#: ../partman-jfs.templates:2001
-msgid "JFS journaling file system"
-msgstr "JFS ජර්නල ගොනු පද්ධතිය"
+#: ../partman-reiser4.templates:2001
+msgid "Reiser4 journaling file system"
+msgstr "Reiser4 ජර්නල ගොනු පද්ධතිය"
 
-#. Type: boolean
+#. Type: text
 #. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid "Use unrecommended JFS root file system?"
-msgstr "නිර්දේශ නොකල JFS මූල ගොනු පද්ධතිය භාවිත කරන්නද?"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid ""
-"Your root file system is a JFS file system. This can cause problems with the "
-"boot loader used by default by this installer."
-msgstr ""
-"ඔබේ මූල ගොනු පද්ධතිය වනුයේ JFS පද්ධතියකි, මෙය මෙම ස්ථාපකයේ පෙරනිමි ආරම්භක පූරකය සමඟ ගැටළු "
-"ඇතිකල හැක."
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:4001
-msgid ""
-"You should use a small /boot partition with another file system, such as "
-"ext3."
-msgstr "ඔබ වඩා කුඩා /boot කොටසක් ext3 වැනි වෙනත් ගොනු පද්ධතියක් සමඟ භාවිත කල යුතුයි."
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid "Use unrecommended JFS /boot file system?"
-msgstr "නිර්දේශ නොකල JFS /boot ගොනු පද්ධතිය භාවිත කරන්නද?"
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid ""
-"You have mounted a JFS file system as /boot. This is likely to cause "
-"problems with the boot loader used by default by this installer."
-msgstr ""
-"ඔබ විසින් JFS ගොනු පද්ධතියක් /boot ලෙස රඳවා ඇත. මෙය බොහෝ විට මෙම ස්ථාපකය භාවිත කරන "
-"ආරම්භක පූරකය සමඟ දෝශ ඇති කරයි."
-
-#. Type: boolean
-#. Description
-#. :sl2:
-#: ../partman-jfs.templates:5001
-msgid ""
-"You should use another file system, such as ext3, for the /boot partition."
-msgstr "/boot කොටස සඳහා ext3 වැනි වෙනත් ගොනු පද්ධතියක් භාවිත කල යුතුය."
+#. :sl1:
+#. Short file system name (untranslatable in many languages)
+#: ../partman-reiser4.templates:3001
+msgid "reiser4"
+msgstr "reiser4"

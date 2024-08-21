@@ -51,7 +51,11 @@ for dev in $DEVICES/*; do
 			db_progress INFO $template
 			db_progress SET 1
 			log-output -t partman --pass-stdout \
-				mkfs.reiser4 -yo "create=reg40"  $device >/dev/null
+			# Jose/Metztli IT 03-06-2020 Software Framework Release Number (SFRN) 5.x.y scale out explicit default
+				# mkfs.reiser4 -yo "create=reg42"  $device >/dev/null
+			# Jose/Metztli IT 08-21-2024 Software Framework Release Number (SFRN) 4.x.y 
+				mkfs.reiser4 -yo "create=reg40" $device >/dev/null
+				   		 
 			code=$?
 			sync
 			db_progress STOP
@@ -62,10 +66,6 @@ for dev in $DEVICES/*; do
 					label=$(cat $id/label | \
 						sed 's/\(................\).*/\1/g')
 				fi
-			# Jose/Metztli IT: 08-26-2015 there is no reiser4 tune
-				## if [ "$label" ]; then
-				## 	reiser4_tune -L "$label" $device
-				## fi
 			fi
 
 			if [ "$code" != 0 ]; then

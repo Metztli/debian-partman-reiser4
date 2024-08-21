@@ -23,6 +23,7 @@ for dev in $DEVICES/*; do
 done
 
 if [ "$reiser4" = yes ]; then
+	# apt-install reiser4progs || true
 	# Jose 12-20-2015: initramfs-tools and linux-base to prepare for custom reiser4-enabled kernel
 	apt-install reiser4progs initramfs-tools linux-base || true
 fi

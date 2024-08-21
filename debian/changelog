@@ -1,5 +1,8 @@
 partman-reiser4 (1) UNRELEASED; urgency=medium
 
+  * I self-create, self-think, self-invent, and/or will Myself into being.~ Moiocoiani ≈ Tezcatlipoca.
   * Initial release. (Closes: #XXXXXX)
+  * During reiser4 formatting no label is prefixed in file commit.d/format_reiser4
+  * Updated to Reiser4/reiser4 strings in .po files
 
- -- Jose R Rodriguez <jose.rodriguez@metztli.com>  Fri, 28 Aug 2015 22:52:46 -0700
+ -- Jose R Rodriguez <jose.rodriguez@metztli.com>  Sat, 29 Aug 2015 01:56:30 -0700
