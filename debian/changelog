@@ -1,5 +1,12 @@
-partman-reiser4 (1) UNRELEASED; urgency=medium
+partman-reiser4 (2) metztli; urgency=medium
 
+  [ Metztli Information Technology ]
+  *  Add support of "discard" mount option for Reiser4. (Closes:
+     https://github.com/edward6/reiser4/issues/18)
+
+ -- Metztli Information Technology <jose@metztli.it>  Thu, 03 Apr 2025 05:44:31 -0700
+
+  [ Jose R Rodriguez ]
   * I self-create, self-think, self-invent, and/or will Myself into being.~ Moiocoiani ≈ Tezcatlipoca.
   * Initial release. (Closes: #XXXXXX)
   * During reiser4 formatting no label is prefixed in file commit.d/format_reiser4

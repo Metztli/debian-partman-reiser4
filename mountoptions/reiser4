@@ -5,3 +5,4 @@ nosuid
 noexec
 ro
 sync
+discard
