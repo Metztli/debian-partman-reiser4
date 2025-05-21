@@ -1,6 +1,18 @@
 #!/bin/sh
+#
+log() {
+	logger -t partman-reiser4 "$@"
+}
+info() {
+        log "info: $*"
+}
+#
 
 . /lib/partman/lib/base.sh
+# Jose/Metztli IT 05-20-2025 next two lines relevant for dialog
+# querying user about reiser4 transparent compression Zstd formatting option.
+set -e
+. /usr/share/debconf/confmodule 
 
 enable_swap
 
@@ -50,11 +62,26 @@ for dev in $DEVICES/*; do
 			db_progress START 0 3 partman/text/formatting
 			db_progress INFO $template
 			db_progress SET 1
-			log-output -t partman --pass-stdout \
-			# Jose/Metztli IT 03-06-2020 Software Framework Release Number (SFRN) 5.x.y scale out explicit default
-				# mkfs.reiser4 -yo "create=reg42"  $device >/dev/null
-			# Jose/Metztli IT 08-21-2024 Software Framework Release Number (SFRN) 4.x.y 
+
+			# Jose/Metztli IT 05-20-2025
+			# Use transparent compression Zstd?
+			# Ask user...
+			db_input low partman-reiser4/reiser4_transparent_compression_zstd || true
+			db_go || true
+
+			if db_get partman-reiser4/reiser4_transparent_compression_zstd && [ "$RET" ]; then
+				info "Inayamo RET is: $RET inside format_reiser4"
+				[[ "$RET" == "Y" ]]
+				info "Zatlatzaccan RET is: $RET inside format_reiser4"
+				log-output -t partman --pass-stdout \
+				mkfs.reiser4 -yo "compress=zstd1" $device >/dev/null
+			else
+				log-output -t partman --pass-stdout \
+				# Jose/Metztli IT 03-06-2020 Software Framework Release Number (SFRN) 5.x.y scale out explicit default
+				# mkfs.reiser4 -yo "create=reg42" $device >/dev/null
+				# Jose/Metztli IT 08-21-2024 Software Framework Release Number (SFRN) 4.x.y 
 				mkfs.reiser4 -yo "create=reg40" $device >/dev/null
+			fi
 				   		 
 			code=$?
 			sync

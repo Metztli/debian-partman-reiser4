@@ -10,6 +10,15 @@ Type: text
 # :sl2:
 _Description: Reiser4 journaling file system
 
+Template: partman-reiser4/reiser4_transparent_compression_zstd
+Type: string
+# :sl2:
+_Description: Enable Reiser4 transparent compression Zstd?
+ .
+ Type "Y" without quotes to enable Zstd transparent compression
+ .
+ Otherwise, leave field blank for defaults: format media without compression
+
 Template: partman/filesystem_short/reiser4
 Type: text
 # Short file system name (untranslatable in many languages)

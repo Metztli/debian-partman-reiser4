@@ -1,3 +1,10 @@
+partman-reiser4 (3) metztli; urgency=medium
+
+  * Adding prompt option for selecting reiser4 transparent compression Zstd
+    storage media formatting during 'Expert install' Debian Installer menu entry
+
+ -- Metztli Information Technology <jose@metztli.it>  Wed, 21 May 2025 05:58:56 -0700
+
 partman-reiser4 (2) metztli; urgency=medium
 
   [ Metztli Information Technology ]
