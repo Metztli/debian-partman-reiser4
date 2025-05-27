@@ -13,7 +13,7 @@ _Description: Reiser4 journaling file system
 Template: partman-reiser4/reiser4_transparent_compression_zstd
 Type: string
 # :sl2:
-_Description: Enable Reiser4 transparent compression Zstd?
+_Description: Enable Reiser4 transparent compression Zstd on ${MOUNT_POINT} ?
  .
  Type "Y" without quotes to enable Zstd transparent compression
  .

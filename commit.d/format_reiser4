@@ -67,24 +67,31 @@ for dev in $DEVICES/*; do
 			db_progress INFO $template
 			db_progress SET 1
 
+			# Jose/Metztli IT 05-27-2025
+			info "template is: $template inside format_reiser4 inayamo my hack substitution."
+				template=partman-reiser4/reiser4_transparent_compression_zstd
+				db_subst $template MOUNT_POINT "$(cat $id/mountpoint)"
+			info "template is: $template inside format_reiser4 zatlatzaccan my hack substitution."
+
 			# Jose/Metztli IT 05-20-2025
 			# Use transparent compression Zstd?
 			# Ask user...
-			db_input low partman-reiser4/reiser4_transparent_compression_zstd || true
+			db_input low $template || true
 			db_go || true
-
-			if db_get partman-reiser4/reiser4_transparent_compression_zstd && [ "$RET" ]; then
+			if db_get $template && [ "$RET" ]; then
 				info "Inayamo RET is: $RET inside format_reiser4"
 				[[ "$RET" == "Y" ]]
 				info "Zatlatzaccan RET is: $RET inside format_reiser4"
 				log-output -t partman --pass-stdout \
 				mkfs.reiser4 -yo "compress=zstd1" $device >/dev/null
+				info "MOUNT_POINT: $(cat $id/mountpoint) was successfully formatted with reiser4 trasparent compression Zstd plugin."
 			else
 				log-output -t partman --pass-stdout \
 				# Jose/Metztli IT 03-06-2020 Software Framework Release Number (SFRN) 5.x.y scale out explicit default
 				# mkfs.reiser4 -yo "create=reg42" $device >/dev/null
 				# Jose/Metztli IT 08-21-2024 Software Framework Release Number (SFRN) 4.x.y 
 				mkfs.reiser4 -yo "create=reg40" $device >/dev/null
+				info "MOUNT_POINT: $(cat $id/mountpoint) was successfully formatted with reiser4 default: no compression."
 			fi
 				   		 
 			code=$?

@@ -1,9 +1,11 @@
 partman-reiser4 (3) metztli; urgency=medium
 
-  * Adding prompt option for selecting reiser4 transparent compression Zstd
+  * Enhancing prompt option for selecting reiser4 transparent compression Zstd
     storage media formatting during 'Expert install' Debian Installer menu entry
+  * Dialog prompt will now show the mount point to be formatted to the user
+    when asking if reiser4 transparent compression Zstd plugin should be used
 
- -- Metztli Information Technology <jose@metztli.it>  Wed, 21 May 2025 05:58:56 -0700
+ -- Metztli Information Technology <jose@metztli.it>  Tue, 27 May 2025 03:55:54 -0700
 
 partman-reiser4 (2) metztli; urgency=medium
 
